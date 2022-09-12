@@ -1,5 +1,5 @@
 const date =new Date();
-const renderCalenda ()=>{
+const renderCalendar ()=>{
     date.setDate(1);
     const monthDays = document.querySelector('.days');
     const lastDay= new Date(
@@ -64,12 +64,12 @@ const renderCalenda ()=>{
 
 document.querySelector(".prev").addEventListener("click", () => {
     date.setMonth(date.getMonth() - 1);
-    renderCalenda();
+    renderCalendar();
 });
 
 document.querySelector(".next").addEventListener("click", () => {
     date.setMonth(date.getMonth() + 1);
-    renderCalenda();
+    renderCalendar();
 });
 
-renderCalenda();
+renderCalendar();
